@@ -8,4 +8,5 @@ call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliar
 @echo %PATH%
 
 @echo Run tests with ctest
-ctest -V -L CORE -C DEBUG build/
+cd build
+ctest -V -L CORE -C DEBUG .
