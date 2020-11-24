@@ -238,7 +238,6 @@ std::unique_ptr<solver_factoryt::solvert> solver_factoryt::get_default()
 std::unique_ptr<solver_factoryt::solvert> solver_factoryt::get_dimacs()
 {
   no_beautification();
-  no_incremental_check();
 
   auto prop = util_make_unique<dimacs_cnft>(message_handler);
 
